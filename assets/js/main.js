@@ -1,6 +1,10 @@
+//******* VARIABLES ************* */
+
 let valueName = document.getElementById('inputName').value;
 
 let valueDistance = parseFloat( document.getElementById('inputDistance').value );
+
+let valueAge = document.getElementById('inputAge').value;
 
 const kmPrice = 0.21;
 
@@ -18,14 +22,8 @@ let numberCoach = Math.floor( Math.random() * 10 ) + 1; //tra 0 e 9
 
 let codCP = Math.floor( Math.random() * 99999 ) + 1; 
 
-let finalPrice = function(){
-    
-    if ( valueAge < 18 ){
-        ticketPrice = kidPrice.toFixed(2)
-    } else if ( valueAge > 65 ){
-        ticketPrice = seniorPrice.toFixed(2)
-    } else {
-        ticketPrice = ticketPrice.toFixed(2)
-    }
-    console.log()
-}
+let generate = document.getElementById('generate');
+
+
+// ************ EVENT'S FUNCTION *********** */
+
