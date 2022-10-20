@@ -10,15 +10,154 @@
     <!-- Bootstrap v5.2 link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <!-- my style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 
-<body>
+<!-- total container of ticket generator -->
+<body class="d-flex flex-column justify-content-around align-items-center p-3">
 
+    <!-- input section presentation -->
+    <div id="title">
+        <h1 class="text-white">
+            Find Out the special Gettin' Off 4U
+        </h1>
+    </div>
+
+    
+    <!-- input section container -->
+    <section id="inputSection" class="d-flex flex-column justify-content-around">
+
+        <form class="row my-2 gy-2 gx-3 justify-content-around align-items-center w-100">
+            
+            <!-- inset name spot -->
+            <div class="col-auto text-center">
+                <label for="autoSizingInput">Name</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Jane Doe">
+            </div>
+            
+            <!-- Journey's length spot -->
+            <div class="col-auto text-center">
+                <label for="autoSizingInput">Journey's Length</label>
+                <input type="text" class="form-control" id="inputDistance" placeholder="klicks">
+            </div>
+      
+            <!-- age's range section with selection -->
+            <div class="col-auto text-center">
+                <label for="autoSizingSelect">Age's range</label>
+                <select class="form-select" id="inputAge">
+                    <option selected="">Choose...</option>
+                    <option value="kid">underage</option>
+                    <option value="senior">over65</option>
+                    <option value="adult">from 18 till 65</option>
+                </select>
+            </div>
+      
+        </form>
+      
+        <!-- generate and reset buttons' section -->
+        <form class="row my-2 gy-2 gx-3 justify-content-center align-items-center w-100">
+            
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Generate</button>
+            </div>
+      
+            
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Reset</button>
+            </div>
+          
+        </form>
+
+
+    </section>
+  
+    <div id="ticketTitle">
+        <h1 class="text-white">
+            Hey, your Ticket !!
+        </h1>
+    </div>
+
+    <section class="row ticketResult" id="ticket">
+        
+        <div class="col-12">
+          
+            <div class="p-4">
+            
+                <h3 class="text-uppercase">Passenger's detayl</h3>
+
+            
+                <div class="card mb-3" style="max-width: 100%">
+              
+                    <div class="row g-0">
+                
+                        <div class="col-md-4 justify-content-center bg-secondary">
+                  
+                            <h3 class="text-uppercase d-flex justify-content-center align-items-center">
+                                Passenger's Name
+                            </h3>
+                  
+                        <h4 id="passenger" class="d-flex justify-content-center"></h4>
+                
+                    </div>
+                
+                    <div class="col-md-8">
+                  
+                        <table class="table table-borderless">
+                    
+                            <thead>
+                      
+                                <tr>
+                        
+                                    <th scope="col">Offert</th>
+                                    <th scope="col">Couch</th>
+                                    <th scope="col">CP Code</th>
+                                    <th scope="col">Ticket price</th>
+                      
+                                </tr>
+                    
+                            </thead>
+                    
+                            <tbody>
+                      
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                      
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                      
+                                <tr>
+                                    <td id="typeOffert"></td>
+                                    <td id="couchNumber"></td>
+                                    <td id="cpCode"></td>
+                                    <td id="finalPrice"></td>
+                                </tr>
+                    
+                            </tbody>
+                  
+                        </table>
+                
+                    </div>
+              
+                </div>
+            
+            </div>
+          
+        </div>
+        
+    </div>
 
     <!-- Bootstrap v5.2 script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    
+
     <!-- main.js' script -->
     <script src="./assets/js/main.js"></script>
     
