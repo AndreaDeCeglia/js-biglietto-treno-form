@@ -19,3 +19,7 @@ body{
     color: #FF14BD;
     font-weight: bolder;
 }
+
+#ticket{
+    display: none;
+}
