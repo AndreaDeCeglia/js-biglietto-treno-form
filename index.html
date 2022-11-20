@@ -61,12 +61,12 @@
         <form class="row my-2 gy-2 gx-3 justify-content-center align-items-center w-100">
             
             <div class="col-auto">
-                <button id="generate" type="submit" class="btn btn-primary">Generate</button>
+                <button id="generateBtn" type="submit" class="btn btn-primary" onclick="return false">Generate</button>
             </div>
       
             
             <div class="col-auto">
-                <button type="submit" class="btn btn-primary" onclick="function();return false">Reset</button>
+                <button type="submitBtn" class="btn btn-primary">Reset</button>
             </div>
           
         </form>
@@ -85,16 +85,16 @@
         
         <div class="col-12">
           
-            <div class="p-4">
+            <div>
             
                 <h3 class="text-uppercase">Passenger's detayl</h3>
 
             
-                <div class="card mb-3" style="max-width: 100%">
+                <div class="card mb-3 d-flex row justify-content-start" style="max-width: 100%">
               
-                    <div class="row g-0">
+                    <div class="col-md-4 g-0 justify-content-center bg-secondary">
                 
-                        <div class="col-md-4 justify-content-center bg-secondary">
+                        <div class="">
                   
                             <h3 class="text-uppercase d-flex justify-content-center align-items-center">
                                 Passenger's Name
@@ -126,18 +126,6 @@
                             </thead>
                     
                             <tbody>
-                      
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                      
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
                       
                                 <tr>
                                     <td id="typeOffert"></td>
